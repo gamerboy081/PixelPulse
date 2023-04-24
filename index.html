@@ -1,8 +1,9 @@
 <html>
   <body>
-    <ul>
     <h1 class=title>PixelPulsePC</h1>
-    <a class=products href="products.html">Products</a>
+    <ul>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </body>
 </html>
@@ -19,5 +20,24 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 </style>

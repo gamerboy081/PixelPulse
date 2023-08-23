@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@ body {
   text-align: center;
   padding: 20px 30px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 27px;
 }
 
 .topnav a:hover {
@@ -68,131 +68,22 @@ body {
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="blocks">Blocks</a>
-  <a href="#Content">Content</a>
-  <a href="#plugin">Plugin</a>
+  <a href="index">Home</a>
+  <a href="blocks" class="active">Blocks ⛏</a>
+  <a href="#Content">Content ▶</a>
+  <a href="#plugin">Plugin 🔌</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   </a>
 </div>
-
+<p>Dirt: No effects</p>
+<p>Cobblestone: Haste 1</p>
+<p>Iron Block: Haste 1 and Speed 1</p>
+<p>Diamond Block: Haste 2 and Speed 2</p>
+<p>Netherite Block: Haste 2 Speed 1 Strength 2</p>
+<p>Beacon Block: Haste 3 Strength 2 Speed 1 Invisability (5% chance for beacon)</p>
+<p>Reroll item: 1 Netherite ingot 1 elytra 1 totem 2 diamond blocks (recipe in discord)</p>
 <script>
 
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  padding:50px 0px;
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  filter: drop-shadow(0 0 0.5rem black);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-</head>
-<body>
-
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <a href="https://google.com"><img src="447698.jpg" style="width:100%"></a>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="img_snow_wide.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="img_mountains_wide.jpg" style="width:100%">
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 </script>
 
 </body>

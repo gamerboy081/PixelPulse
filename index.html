@@ -70,8 +70,9 @@ body {
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
   <a href="blocks">Blocks ⛏</a>
-  <a href="#Content">Content ▶</a>
+  <a href="content">Content ▶</a>
   <a href="#plugin">Plugin 🔌</a>
+  <a href="members">Members</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   </a>
 </div>
@@ -99,6 +100,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
   filter: drop-shadow(0 0 0.5rem black);
+  
 }
 
 /* Caption text */
@@ -135,13 +137,21 @@ img {vertical-align: middle;}
 .active {
   background-color: #717171;
 }
-
+.capt {
+    text-align:center;
+    font-size:30px;
+}
 
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
 </style>
 </head>
 <body>
@@ -151,24 +161,21 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <a href="https://www.youtube.com/watch?v=DeAgInwIUpA&t=0s"><img src="SMPTHUMBREAL1.png" style="width:100%"></a>
+  <a href="https://www.youtube.com/watch?v=DeAgInwIUpA"><img src="SMPTHUMBREAL1.png" style="width:100%"></a>
+  <p class=capt>I built my friend his own secret base... - Sevenz</p>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="img_snow_wide.jpg" style="width:100%">
-</div>
+  <a href="https://www.youtube.com/watch?v=DbiD-4mshsA&t=0s"><img src="https://cdn.discordapp.com/attachments/1142485349214474371/1144436617843577012/IMG_5264.png" style="width:100%"></a>
+  <p class=capt>I joined the Woken SMP... - LavaBeast</p>
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="img_mountains_wide.jpg" style="width:100%">
-</div>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
